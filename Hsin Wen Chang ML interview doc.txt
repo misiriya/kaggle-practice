@@ -1,0 +1,247 @@
+Hsin-Wen Chang ML interview questions:
+
+Dec 13, 22
+ What is the difference between Online and Offline (Batch) learning?
+ 
+ https://www.kaggle.com/general/317514
+ 
+ Dec 14, 22
+ What is the difference between Stochastic Gradient Descent (SGD) and standard Gradient Descent (GD) 🥸 ?
+ 
+ https://www.geeksforgeeks.org/difference-between-batch-gradient-descent-and-stochastic-gradient-descent/
+ https://www.geeksforgeeks.org/gradient-descent-algorithm-and-its-variants/
+ 
+ Dec 15, 22
+ Can backpropagation work well with multiple hidden layers 🤔 ?
+ 
+ Margaret Gathoni
+ — 
+Today at 1:48 PM
+My thoughts: Backpropagation is a good tool for improving the accuracy of prediction, however it's slow, hence with multiple hidden layers means more training time.
+
+Hsin-Wen Chang
+ — 
+Today at 3:11 PM
+Good answer @Margaret Gathoni  🥳 ! Especially with sigmoid activate function the backpropagation doesn't usually work well if we have a lot of hidden layers as the diffusion of gradients leads to slow training in the lower layers. 
+
+ Dec16, 22
+ What do you understand by Rectified Linear Units (ReLU) ?
+ 
+ The Rectified Linear Unit (ReLU) is the most commonly used activation function in deep learning. The function returns 0 if the input is negative, but for any positive input, it returns that value back.
+ 
+ https://towardsdatascience.com/why-rectified-linear-unit-relu-in-deep-learning-and-the-best-practice-to-use-it-with-tensorflow-e9880933b7ef
+ 
+ https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/
+ 
+ Dec17, 22 and Dec18, 22 is off days.
+ 
+ Dec19, 22 
+ Why is the softmax function used for the output layer 🤔 ?
+
+Softmax function is used for the output layer only (at least in most cases) to ensure that the sum of the components of output vector is equal to 1 (for clarity see the formula of softmax cost function). This also implies what is the probability of occurrence of each component (class) of the output and hence sum of the probabilities(or output components) is equal to 1.
+
+Dec20, 22
+Name some of the regularization methods that could be used in Artificial Neural Networks. 🤔
+
+L1 / L2, Weight Decay, Dropout, Batch Normalization, Data Augmentation and Early Stopping
+
+https://medium.com/yottabytes/a-quick-guide-on-basic-regularization-methods-for-neural-networks-e10feb101328
+
+Dec21, 22
+Describe Convolutional Neural Networks (CNNs) what are 4 building blocks that CNNs based on 🤔 ? 
+
+For the building block CNN basics are: a convolutional layer used to to detect features in an image, a pooling layer to help fix distorted images, and a fully connected layer to process the data in a neural network. It also has a Flattening layer to turn the image into a suitable representation. I also think a ReLU is crucial building block since it  make the image smooth and make boundaries distinct.
+
+Hsin-Wen Chang
+ — 
+Today at 3:06 PM
+Good approach @Margaret Gathoni  🌟 The primary purpose of convolution is to extract the features from input image using a small matrix call filter or kernel slides over the image and the dot product (feature map) is computed. By varying the filter, we can have different result like blur, edge detection. Pooling or sub sampling such as spatial pooling (downsampling) reduce dimension of each feature map. Downsampled feature maps get distorted. This distortion provides a way for data augmentation to improve the generality of the network. pool layer doesn't fix distorted image it downsampled feature maps get distorted image perform data augmentation to improve the network. Fully connected layer is use these features for classifying the input image into various classes base on training dataset.
+
+https://cs231n.github.io/convolutional-networks/
+
+Dec22, 22
+Tell me about Recurrent Neural Networks (RNNs) 🤔 ?
+
+From my understanding they are a class/group of artificial neural networks which are mainly used in NLP and speech recognition. They use the same principal of interconnected group of nodes just like a human brain.
+
+Good answer @Margaret Gathoni 🥳 , RNNs is to make use of the sequential information. They perform the same task for every element of a sequence with the output depended on the previous computation that's why call recurrent. unlike traditional neural networks, RNNs have loop in them allow information to persist.
+
+Dec23, 22
+If the weights oscillate a lot over training iterations ( swinging between positive and negative values) what parameter do you need to tune to address this issue 🤔 ?
+
+Is this the instance where you adjust your learning rate, max and min depth, the estimator and finally the subsample which controls the data set samples that each iteration uses?
+
+Good approach 💪  @Margaret Gathoni Tuning learning rate is the correct answer. If learning rate is too high it will cause the result to jump over the optimal point resulting in the weights oscillating between positive and negative. If it's too low, it may take a very long time to converge.
+
+Dec26, 22
+What is Regularization 🤔 ?
+
+Regularization is a method to constraint the model to fit our data accurately and not overfit.
+
+Dec27, 22
+What is the difference between the L-1 and L-2 regularization 🤔 ?
+
+Margaret Gathoni
+ — 
+Yesterday at 2:31 PM
+L1 tends to shrink all  coefficients by the same factor and some are shrank to zero mostly resulting in a sparse model; L2 on the other hand also shrinks the coefficient using same factors but none of them are eliminated hence no sparse model.
+Hsin-Wen Chang
+ — 
+Yesterday at 3:17 PM
+Good answer @Margaret Gathoni 🥳 ! L1 regularization minimizes the sum of absolute errors and thus, used for feature selection in sparse feature space by making few coefficients zero. L2 minimizes the sum of squares of absolute errors used to smoothen the solution by creating small distributed coefficients. L1 is more robust since it's resistant to the outliers. L2 squares the error so for any outlier its square term would be huge.
+Margaret Gathoni
+ — 
+Yesterday at 3:24 PM
+It's even more clear why L1 is more robust on the last statement. Thank you
+
+Dec28, 22
+What is the difference between density sparse data and dimensionally sparse data 🧐 ?
+
+Margaret Gathoni
+ — 
+Today at 1:07 PM
+dense sparse means most of the values are not zero while dimensional sparse most features have zero values.
+Hsin-Wen Chang
+ — 
+Today at 1:46 PM
+Hello @Margaret Gathoni, density sparse data means that a high percentage of the data contains 0 or null value while dimensionally sparse data has large feature space in which some of the features are redundant, correlated etc.
+Margaret Gathoni
+ — 
+Today at 1:54 PM
+This is better explained. Thank you
+
+Dec29, 22
+Is it beneficial to perform dimensionality reduction before fitting an SVM? Why or why not 🧐 ?
+
+My guess is yes it's beneficial. Dimensional reduction as a form of feature scaling is important since distance between two features that are scaled to those that aren't differ significantly and especially for a sensitive model like svm. Therefore, standardizing the feature values improves the classifier performance significantly.
+
+Hsin-Wen Chang
+ — 
+Yesterday at 2:48 PM
+Good attempt @Margaret Gathoni 🤓 ! Reducing the number of features will definitely reduce the computational complexity of the model but it may not improve the performance of SVM since SVM already use regularization to prevent overfitting thus performing dimensionality reduction before SVM may not improve the performance of the SVM classifier.
+
+Dec30, 22
+Name some of the evaluation metrics you know. Something apart from accuracy 🤔 ?
+
+Daisy Chelangat
+ — 
+Today at 12:58 PM
+I guess there is also recall and precision
+PhilomenaMbura
+ — 
+Today at 12:58 PM
+F1 score
+Hsin-Wen Chang
+ — 
+Today at 1:04 PM
+Good approach @Daisy Chelangat 🥳  recall and precision are measure of a model's accuracy and we want other evaluation metrics that apart from accuracy.
+
+Hsin-Wen Chang
+ — 
+Today at 1:06 PM
+Good approach 💪 @PhilomenaMbura ! F1 score is also a measure of model's accuracy and we want other evaluation metrics that apart from accuracy 🧐 .
+Timothy Musungu
+ — 
+Today at 1:27 PM
+How about MSE and MAE?
+Margaret Gathoni
+ — 
+Today at 1:29 PM
+RMSE
+
+Hsin-Wen Chang
+ — 
+Good answer @Margaret Gathoni 🥳 ! Other evaluation metrics such as:
+1. logarithmic loss.
+2. Area under ROC curve.
+3. Mean squared error (MSE)/Root Mean Square Error(RMSE) and mean absolute error (MAE) in regression.
+Margaret Gathoni
+ — 
+Today at 5:36 PM
+Come to think of it i have never considered AUC as an evaluation metrics
+
+Hsin-Wen Chang
+ — 
+Today at 11:33 AM
+It's very less use in reality most time we use precision, recall.
+
+***many conversations***
+
+Hsin-Wen Chang
+ — 
+Yesterday at 12:22 PM
+Hello @Margaret Gathoni,
+I think I over simplify the use case  of the Precision-Recall AUC (PR AUC) vs ROC AUC before. The following is an helpful  detail reading like @Mensur Dlakic explained before:
+https://ashutoshtripathi.com/2022/01/09/what-is-the-difference-between-precision-recall-curve-vs-roc-auc-curve/ 
+
+Jan3, 23
+How would you handle the scenario where your dataset has missing or dirty values 🧐 ?
+
+For missing values you decide  depending on the data set and type of analysis you will be doing. do a a skewness test if you want to fill the missing value. The skewness test help you to know whether to fill with mean, median or mode. You can also decide to backfill or forward fill. for cleaning of data set where dealing with null values is also a part of you do validity check, accuracy check, completeness check, consistency and uniformity check. My thoughts.
+
+Jan4, 23
+How would you differentiate supervised and unsupervised learning 🤔 ?
+
+Margaret Gathoni
+ — 
+Today at 1:50 PM
+Supervised learning uses labelled data and is used to classify data or make predictions while unsupervised learning doesn't use labelled data and is used to understand relationship with in the dataset.
+Hsin-Wen Chang
+ — 
+Today at 2:10 PM
+Good answer @Margaret Gathoni 🥳 ! Supervised learning can be classified as a classification or a regression technique. Unsupervised learning is to model the distribution of the data. Unsupervised learning techniques include clustering, anomaly detection, and dimensionality reduction.
+
+Jan5, 23
+What do you mean by information gain 🤓 ?
+
+It's a measure for uncertainty or randomness of data (entropy). Mostly uses in decision trees or random forest to decide the best split. I don't know how to phrase it better
+
+It is an excellent answer 👏 🥳 @Margaret Gathoni ! The information Gain is the change in the entropy.  Decision Tree determine the root node by calculate the entropy for each variable and its potential splits. Random forest is used in Ensembling or using averages of multiple models prevent overfitting with decision tree.
+
+Jan6, 23
+Describe some of the splitting rules used by different decision tree algorithms 🧐 ?
+
+Margaret Gathoni
+ — 
+Today at 12:21 PM
+Is this where if you dealing with continuous variable in regression case you aim on variance reduction. And if you dealing with categorical variables like in classification cases you aim on Gini index , information gain and at times the Chi-square
+Hsin-Wen Chang
+ — 
+Today at 3:27 PM
+Good answer @Margaret Gathoni 💪 ! it can separate  as the following:
+Continuous variable:
+* Reduction in Variance
+Categorical variable:
+* Gini Impurity
+* Information Gain
+* Chi-Square 
+
+Jan9, 23
+Our Machine Learning interview question for the day: Is using an ensemble like random forest always good 🧐 ?
+
+Margaret Gathoni
+ — 
+Today at 12:46 PM
+I think it depends on the case at hand. Ensemble are better since they improve prediction however, they are at times hard to interpret.
+'Toba Adesugba
+ — 
+Today at 2:24 PM
+I'd say it's not always good. Sometimes ensemble can be overkill for a simple dataset when a normal algorithm could have got the job done with the same amount of accuracy.
+
+Also sometimes you may not have the time and resources that ensemble models require to perform training.
+Fauzan Mohammed
+ — 
+Today at 2:49 PM
+A machine learning model can frequently perform better when an ensemble method like the random forest is used, but it is not always the optimal option. Unfortunately, they can also be more computationally expensive and may not be required if a single model performs well enough.
+Hsin-Wen Chang
+ — 
+Today at 3:48 PM
+Excellent answers @Margaret Gathoni @'Toba Adesugba @Fauzan Mohammed 🥳 !  Ensembles generally don't perform well when the relationship between dependent and independent variables is highly linear. The classification made by Random Forests is difficult to interpret easily unlike decision trees.
+
+Jan10, 23
+What is Ensemble Learning 🤔 
+
+It's where you use multiple models for example bagging, stacking, and boosting. You combine the models to come up with improved results for you final model
+
+Outstanding answer @Margaret Gathoni 🥳 ! Comparing to  the standard machine learning approach Ensemble Learning combines a set hypotheses for prediction to boosts the weak learners hence improves the overall prediction accuracy. 
+
