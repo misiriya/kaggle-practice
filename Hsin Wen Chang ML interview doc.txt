@@ -245,3 +245,28 @@ It's where you use multiple models for example bagging, stacking, and boosting. 
 
 Outstanding answer @Margaret Gathoni 🥳 ! Comparing to  the standard machine learning approach Ensemble Learning combines a set hypotheses for prediction to boosts the weak learners hence improves the overall prediction accuracy. 
 
+Jan11, 23
+what are autoencoders🤔 ?
+
+Margaret Gathoni
+ — 
+Yesterday at 1:41 PM
+ANN used to learn efficient coding for unlabelled data. Utilized in unsupervised learning
+Aayushi Jha
+ — 
+Yesterday at 1:45 PM
+Autoencoders are a type of feed forward neural networks which are trained to reproduce their input at the output layer. It consists of two parts, an encoder and decoder along with a hidden representation layer in between. 
+
+Hsin-Wen Chang
+ — 
+Yesterday at 4:01 PM
+Good answer @Aayushi Jha @Margaret Gathoni 💪 ! In here encoding (converting the higher dimensional input to a much lower dimension hidden layers), decoding (converting the hidden layers to the output).  Autoencoders try to learn the approximation to the input and not actually predict any output it's useful as they find the low dimensional representation of the given dataset also remove any redundancy present in it.
+
+Jan12, 23
+What do you understand by Type I and Type II errors 🤔 ?
+
+Margaret Gathoni
+ — 
+Today at 2:03 PM
+Type 1 is False Positive which Type II is False Negative. Normally I interpret this using the justice example where: Type 1 (False Positive)- it's when the null hypothesis is rejected (Innocent until proven guilty) when the null  is actually true (defendant is actually innocent but ruled out as guilty). Type II (False Negative) - It's when the null hypothesis is not rejected when it's actually False to the population (defendant is actually guilty but ruled out as innocent).
+
