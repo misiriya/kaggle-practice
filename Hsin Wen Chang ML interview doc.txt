@@ -270,3 +270,29 @@ Margaret Gathoni
 Today at 2:03 PM
 Type 1 is False Positive which Type II is False Negative. Normally I interpret this using the justice example where: Type 1 (False Positive)- it's when the null hypothesis is rejected (Innocent until proven guilty) when the null  is actually true (defendant is actually innocent but ruled out as guilty). Type II (False Negative) - It's when the null hypothesis is not rejected when it's actually False to the population (defendant is actually guilty but ruled out as innocent).
 
+Jan13, 23
+What is a confusion matrix? Explain it for a 2-class problem 🤔 ?
+
+anirban chatterjee
+ — 
+Today at 5:25 PM
+A matrix which is used to figure out the accuracy of classification models. In this matrix, you're able to see both the predicted values positioned next to the actual outcomes for the datasets.
+When computing two-classification problems, you can use this matrix to find:
+
+    Accuracy rate: This is the percentage of correct predictions within a dataset.
+
+    Misclassification rate: This is the percentage of times a classifier is incorrect.
+
+    True positive rate: Also referred to as sensitivity, this allows researchers to identify correctly all the data which falls within a specific classification.
+
+    True negative rate: Also referred to as specificity, and refers to how often a classifier predicts an undesirable outcome.
+
+    False-positive rate: This represents how often a classifier is incorrect when predicting desirable outcomes.
+
+    False-negative rate: This is an error that represents how often a classifier is incorrect when predicting undesirable outcomes.
+
+    Decision rate: This is the rate at which desirable predictions turn out to be correct.
+Margaret Gathoni
+ — 
+Today at 5:27 PM
+A table used to illustrate algorithm performance using metric such as Recall, Precision, Accuracy, F1-score etc. Normally we're checking to see our model ability to identify True positive, True Negative and quantify what it classify as False Negative and False positive
