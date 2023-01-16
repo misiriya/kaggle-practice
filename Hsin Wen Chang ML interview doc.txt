@@ -296,3 +296,22 @@ Margaret Gathoni
  — 
 Today at 5:27 PM
 A table used to illustrate algorithm performance using metric such as Recall, Precision, Accuracy, F1-score etc. Normally we're checking to see our model ability to identify True positive, True Negative and quantify what it classify as False Negative and False positive
+
+Jan16, 23
+Explain the Bias-Variance trade-off 🥸
+
+Margaret Gathoni
+ — 
+Today at 2:00 PM
+the bias–variance tradeoff is the property that increases the bias in an estimator can reduce the variance across samples of the parameter estimated.
+Hsin-Wen Chang
+ — 
+Today at 4:51 PM
+Good answer @Margaret Gathoni 🥳 🎉 !
+anirban chatterjee
+ — 
+Today at 4:52 PM
+Models that have high bias tend to have low variance. For example, linear regression models tend to have high bias (assumes a simple linear relationship between explanatory variables and response variable) and low variance (model estimates won’t change much from one sample to the next).
+
+However, models that have low bias tend to have high variance. For example, complex non-linear models tend to have low bias (does not assume a certain relationship between explanatory variables and response variable) with high variance (model estimates can change a lot from one training sample to the next).
+
