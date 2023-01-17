@@ -315,3 +315,16 @@ Models that have high bias tend to have low variance. For example, linear regr
 
 However, models that have low bias tend to have high variance. For example, complex non-linear models tend to have low bias (does not assume a certain relationship between explanatory variables and response variable) with high variance (model estimates can change a lot from one training sample to the next).
 
+Jan17, 23
+When would you use k-Nearest Neighbors for regression 🧐 ?
+
+Margaret Gathoni
+ — 
+Today at 1:01 PM
+when the relationship between the independent and dependent variables is non-linear
+
+Hsin-Wen Chang
+ — 
+Today at 5:33 PM
+Good answer @Margaret Gathoni 🥳 ! We use K-NN in regression for estimating the continuous variables such as compute the Euclidean distance from the test instance to the labeled instances or order the labeled instances by increasing distance or find a heuristically optimal k nearest neighbors base on RMSE or calculate an inverse distance weighted average with the k-nearest multivariate neighbors.
+
