@@ -328,3 +328,19 @@ Hsin-Wen Chang
 Today at 5:33 PM
 Good answer @Margaret Gathoni 🥳 ! We use K-NN in regression for estimating the continuous variables such as compute the Euclidean distance from the test instance to the labeled instances or order the labeled instances by increasing distance or find a heuristically optimal k nearest neighbors base on RMSE or calculate an inverse distance weighted average with the k-nearest multivariate neighbors.
 
+Jan18, 23
+What do you mean by curse of dimensionality 🤔 ?
+
+Margaret Gathoni
+ — 
+Today at 2:19 PM
+The challenges a machine learning algorithm faces when working with higher dimensions of data. Normally the  number of variables required to effectively characterize a model increases  as its dimensions (or characteristics) increase.
+Aayushi Jha
+ — 
+Today at 2:29 PM
+Number of input variables or features in a data set are referred to as a dataset's dimensionality.
+The curse of dimensionality refers to the fact that when we use large number of dimensions or have high dimensionality it can cause poor performance and overfitting in our ml model.
+anirban chatterjee
+ — 
+Today at 2:57 PM
+The curse of dimensionality basically means that the error increases with the increase in the number of features. It refers to the fact that algorithms are harder to design in high dimensions and often have a running time exponential in the dimensions. A higher number of dimensions theoretically allow more information to be stored, but practically it rarely helps due to the higher possibility of noise and redundancy in the real-world data.
