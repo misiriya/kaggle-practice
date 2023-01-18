@@ -344,3 +344,7 @@ anirban chatterjee
  — 
 Today at 2:57 PM
 The curse of dimensionality basically means that the error increases with the increase in the number of features. It refers to the fact that algorithms are harder to design in high dimensions and often have a running time exponential in the dimensions. A higher number of dimensions theoretically allow more information to be stored, but practically it rarely helps due to the higher possibility of noise and redundancy in the real-world data.
+Hsin-Wen Chang
+ — 
+Today at 3:53 PM
+Excellent answers @Margaret Gathoni @Aayushi Jha @anirban chatterjee 🥳 🎉 ! When the number of features is very large relative to the number of instances in the dataset, certain ML algorithms struggle to train effective models. The problem of having a huge feature space is the curse of dimensionality. 
