@@ -348,3 +348,22 @@ Hsin-Wen Chang
  — 
 Today at 3:53 PM
 Excellent answers @Margaret Gathoni @Aayushi Jha @anirban chatterjee 🥳 🎉 ! When the number of features is very large relative to the number of instances in the dataset, certain ML algorithms struggle to train effective models. The problem of having a huge feature space is the curse of dimensionality. 
+
+Jan 19, 23
+How can you check if the regression model fits the data well 🤓 ?
+
+Margaret Gathoni
+ — 
+Today at 2:48 PM
+Normally look at the difference between observed values vs predicted value. The difference should be small and also unbiased
+Timothy Musungu
+ — 
+Today at 3:08 PM
+One way would be to use metrics such as R2, MAE, RMSE. A very simple way would be to create a regression plot and check if target values lie close to the regression line.
+Hsin-Wen Chang
+ — 
+Today at 3:57 PM
+Good answers @Margaret Gathoni @Timothy Musungu 🎉🥳  ! We can use the following statistics to test the model's fitness:
+R-squared->Statistical measure of how close the data points are to the fitted regression line.
+F-test -> Evaluate the null hypothesis that all regression coefficients are equal to zero versus the alternative hypothesis that at least one is not to identify the best model which fits the given dataset.
+RMSE->square root of the variance of the residuals which measure the average deviation of the estimates from the observed value.
