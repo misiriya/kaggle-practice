@@ -367,3 +367,28 @@ Good answers @Margaret Gathoni @Timothy Musungu 🎉🥳  ! We can use the follo
 R-squared->Statistical measure of how close the data points are to the fitted regression line.
 F-test -> Evaluate the null hypothesis that all regression coefficients are equal to zero versus the alternative hypothesis that at least one is not to identify the best model which fits the given dataset.
 RMSE->square root of the variance of the residuals which measure the average deviation of the estimates from the observed value.
+
+Jan20, 23
+What is a limitation of R-squared? How do you adjust it 🧐 ?
+
+Daisy Chelangat
+ — 
+Today at 12:42 PM
+One problem with R2 is that it increases with increased number of variables and this might not reflect the real picture of variability in your model. We can use adjusted R2 instead
+Daisy Chelangat
+ — 
+Today at 12:43 PM
+trial
+Hsin-Wen Chang
+ — 
+Today at 12:56 PM
+It's an excellent answer @Daisy Chelangat 🥳 ! R -squared range between 0 and 1, where 0 indicating the proposed does not improve prediction over the mean model and 1 indicating the perfect prediction. The drawback of R -squared like @Daisy Chelangat said it can increase as the predictors are added the the regression model even they are not actually improving the model's fit. We can use adjusted R-squared for model where the number of predictors is greater than 1. It incorporates the model's degrees of freedom and decreases if the increase in model fit does not make up for the loss of degrees of freedom thus it only increases when the model fit is actually improved.
+Margaret Gathoni
+ — 
+Today at 12:58 PM
+It doesn't measure how well sample data fits a distribution from a population with a normal distribution
+Hsin-Wen Chang
+ — 
+Today at 4:53 PM
+Good way of thinking @Margaret Gathoni 👏 ! R squared can't be use for checking normal distribution since it tells us the linear association between 2 random variables.
+
