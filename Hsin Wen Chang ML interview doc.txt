@@ -392,3 +392,22 @@ Hsin-Wen Chang
 Today at 4:53 PM
 Good way of thinking @Margaret Gathoni 👏 ! R squared can't be use for checking normal distribution since it tells us the linear association between 2 random variables.
 
+Jan23, 23
+How would you evaluate a Logistic Regression model 🤔 ?
+
+Cynthia Barasa
+ — 
+Today at 12:11 PM
+To evaluate a logistic regression model, one can use several metrics, including accuracy, precision, recall, and F1 score. 
+
+A confusion matrix can be used to understand the specific errors made by the model. 
+
+Receiver Operating Characteristic (ROC) curve and the area under the curve (AUC) are also commonly used to evaluate the performance of a logistic regression model. 
+
+An  appropriate evaluation metric will depend on the specific problem and requirements of the model.
+Margaret Gathoni
+ — 
+Today at 12:20 PM
+Logistic regression evaluation it's a classification domain so we use a confusion matrix with best metrics being F1 score , you can also use Precision and Recall depending on  the case at hand . and also Accuracy even though you need to be careful with accuracy. ROC AUC can also be used to determine how much the model is capable of distinguishing between classes. 
+
+Good answers @Cynthia Barasa , @Margaret Gathoni Since Logistic Regression is used to predict the probabilities we can use AUROC curve along with the confusion matrix to determine its performance. Another way we can use AIC (Akaike Information Criterion) such as the analogous metrics of adjusted R-squared in logistic regression is AIC. AIC is the measure of fit which penalizes a model for the number of model coefficients where we prefer a model with the minimum AIC value. Another way we prefer the model with lower deviance value. Deviance represents the goodness of fit for a model.
