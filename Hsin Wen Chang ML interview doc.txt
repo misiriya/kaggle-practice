@@ -411,3 +411,28 @@ Today at 12:20 PM
 Logistic regression evaluation it's a classification domain so we use a confusion matrix with best metrics being F1 score , you can also use Precision and Recall depending on  the case at hand . and also Accuracy even though you need to be careful with accuracy. ROC AUC can also be used to determine how much the model is capable of distinguishing between classes. 
 
 Good answers @Cynthia Barasa , @Margaret Gathoni Since Logistic Regression is used to predict the probabilities we can use AUROC curve along with the confusion matrix to determine its performance. Another way we can use AIC (Akaike Information Criterion) such as the analogous metrics of adjusted R-squared in logistic regression is AIC. AIC is the measure of fit which penalizes a model for the number of model coefficients where we prefer a model with the minimum AIC value. Another way we prefer the model with lower deviance value. Deviance represents the goodness of fit for a model.
+
+Jan24, 23
+Which metric is generally used to evaluate the performance of a
+Logistic Regression model 🤓 ?
+Cynthia Barasa
+ — 
+Today at 12:03 PM
+A common metric used to evaluate the performance of a logistic regression model is the accuracy.
+
+Accuracy is the proportion of correct predictions made by the model.
+
+Other evaluation metrics like precision, recall, F1-score and ROC-AUC are also used to evaluate the performance of logistic regression models.
+hannahkariuki
+ — 
+Today at 12:14 PM
+RMSE, Accracy 
+Margaret Gathoni
+ — 
+Today at 12:18 PM
+AIC
+Hsin-Wen Chang
+ — 
+Today at 12:21 PM
+Good answer @Margaret Gathoni @Cynthia Barasa  🥳 In here AIC is the most frequent, generally and widely used metric for evaluating Logistic Regression model's performance more detail reading: http://www.sthda.com/english/articles/38-regression-model-validation/158-regression-model-accuracy-metrics-r-square-aic-bic-cp-and-more/
+https://builtin.com/data-science/what-is-aic but there are some special case AIC isn't that useful detail reading:https://www.displayr.com/how-to-interpret-logistic-regression-outputs/ @hannahkariuki RMSE is used for regression, not classification detail reading https://www.kdnuggets.com/2022/04/logistic-regression-classification.html https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide 
