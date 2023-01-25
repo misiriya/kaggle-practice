@@ -415,6 +415,7 @@ Good answers @Cynthia Barasa , @Margaret Gathoni Since Logistic Regression is us
 Jan24, 23
 Which metric is generally used to evaluate the performance of a
 Logistic Regression model 🤓 ?
+
 Cynthia Barasa
  — 
 Today at 12:03 PM
@@ -436,3 +437,23 @@ Hsin-Wen Chang
 Today at 12:21 PM
 Good answer @Margaret Gathoni @Cynthia Barasa  🥳 In here AIC is the most frequent, generally and widely used metric for evaluating Logistic Regression model's performance more detail reading: http://www.sthda.com/english/articles/38-regression-model-validation/158-regression-model-accuracy-metrics-r-square-aic-bic-cp-and-more/
 https://builtin.com/data-science/what-is-aic but there are some special case AIC isn't that useful detail reading:https://www.displayr.com/how-to-interpret-logistic-regression-outputs/ @hannahkariuki RMSE is used for regression, not classification detail reading https://www.kdnuggets.com/2022/04/logistic-regression-classification.html https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide 
+
+Jan25, 23
+Explain K-Means Clustering and its objective 🤓 ?
+
+Margaret Gathoni
+ — 
+Today at 11:44 AM
+K-mean clustering is an Unsupervised algorithm used for grouping(clustering) data into predetermined clusters. The algorithm main objective is to minimize the sum of the distances between data points in each cluster.
+Chandrakala Gowda
+ — 
+Today at 11:48 AM
+The objective is to classify a test object based on the train set. Using K-number of neighbors(from the train set) that are closest/similar to the test point based on majority vote. It is an unsupervised learning. 
+hannahkariuki
+ — 
+Today at 12:16 PM
+K-means clustering is an unsupervised algorithm which involves assigning k  clusters to each example.  The objective is to minimize differences (distance) within each cluster and maximize differences between clusters.
+Hsin-Wen Chang
+ — 
+Today at 1:44 PM
+Good answers @Margaret Gathoni @Chandrakala Gowda 🥳 , K-Means Clustering is used for handling a large number of data points which partition the dataset into k clusters such that each data point belongs to the cluster with the nearest mean. Good approach @hannahkariuki 💪 ! K-Means Clustering starts from some initial clusters then reassigns data points to k clusters to minimize the total penalty.
