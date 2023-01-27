@@ -457,3 +457,23 @@ Hsin-Wen Chang
  — 
 Today at 1:44 PM
 Good answers @Margaret Gathoni @Chandrakala Gowda 🥳 , K-Means Clustering is used for handling a large number of data points which partition the dataset into k clusters such that each data point belongs to the cluster with the nearest mean. Good approach @hannahkariuki 💪 ! K-Means Clustering starts from some initial clusters then reassigns data points to k clusters to minimize the total penalty.
+
+Jan26, 23
+What would you do if your model is suffering from low bias and high variance? And why? 🤔
+
+Margaret Gathoni
+ — 
+Yesterday at 12:11 PM
+low bias and high variance means there is overfitting. The model will overfit the target. It's able to perform accurately with our training data but on test data the model performs poorly. In this case I would resample the training data and see if the evaluation of the model changes and also instead of just having a training and test data set I would include a validation data set. Since our main aim is for the model to make sensible prediction from the unseen data. Bearing in mind there is no case where you can have zero of either bias or variance and that when bias-variance tradeoff comes in handy.
+hannahkariuki
+ — 
+Yesterday at 12:21 PM
+When the model is suffering from low bias and high variance, it implies that the model is overfitting. To address this, I would either reduce the number of features that is, keep only important features or regularization if all features are important this will reduce magnitude of the parameters
+Hsin-Wen Chang
+ — 
+Yesterday at 2:17 PM
+Good answers @Margaret Gathoni @hannahkariuki 🚀 🥳 ! In low bias and high variance situations, we can use bagging algorithms such as Random Forest to divide dataset into subset made with repeated randomized sampling. These samples are used to generate a set of models using a single learning algorithm. Later the model predictions are combined using voting (classification) or averaging (regression). We can also use regularization technique where the higher model coefficients get penalized such that lowering the model complexity. Also like @hannahkariuki said use top n features from the variable importance chart (The statistical significance of each variable or feature in the data with respect to its effect on the generated model).
+Andrea Ciufo
+ — 
+Yesterday at 2:21 PM
+I definetly love @Hsin-Wen Chang  questions. They help me to refresh everyday the theory behind concepts that I don't use always on daily basis https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
