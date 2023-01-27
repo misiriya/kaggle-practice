@@ -477,3 +477,23 @@ Andrea Ciufo
  — 
 Yesterday at 2:21 PM
 I definetly love @Hsin-Wen Chang  questions. They help me to refresh everyday the theory behind concepts that I don't use always on daily basis https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
+
+Jan27, 23
+Why and where do you need to use Cluster analysis 😶‍🌫️ ?
+
+Chandrakala Gowda
+ — 
+Today at 11:48 AM
+One possible application would be medical field. classification of tissue samples? or cell samples? based on the similarity of the samples for the diagnosis of tumors etc...
+Faith Were
+ — 
+Today at 11:54 AM
+We use cluster analysis to gain important insights from data by observing what clusters the data points fall into when we apply a clustering algorithm to the data.
+hannahkariuki
+ — 
+Today at 11:59 AM
+Cluster analysis is used for investigating the structure in data. The aim is in finding groups of objects with homogeneous properties out of heterogeneous large samples.
+Hsin-Wen Chang
+ — 
+Today at 12:06 PM
+Good answers @Chandrakala Gowda @Faith Were @hannahkariuki  🥳 ! Cluster analysis can be used for the initial analysis of the dataset base on the different target attributes such as the data lacking the output labels we can use clustering technique find the class labels by grouping the input data instances into different clusters then assign a unique lable to each cluster. It has been used in a wide variety of applications such as customer segmentation for marketing, weather forecast, genetic study and the use case like @Chandrakala Gowda said.
