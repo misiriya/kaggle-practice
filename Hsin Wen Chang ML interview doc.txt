@@ -497,3 +497,39 @@ Hsin-Wen Chang
  — 
 Today at 12:06 PM
 Good answers @Chandrakala Gowda @Faith Were @hannahkariuki  🥳 ! Cluster analysis can be used for the initial analysis of the dataset base on the different target attributes such as the data lacking the output labels we can use clustering technique find the class labels by grouping the input data instances into different clusters then assign a unique lable to each cluster. It has been used in a wide variety of applications such as customer segmentation for marketing, weather forecast, genetic study and the use case like @Chandrakala Gowda said.
+
+Jan30, 23
+List some of the Cluster analysis methods 🤔 ?
+hannahkariuki
+ — 
+01/30/2023 12:01 PM
+1. Hierarchical methods which starts with the finest possible partition and puts groups together step by step.
+2. Partitioning methods which start from finest possible structure, compute the distance matrix for the clusters and join the clusters that have the smallest distance.
+Margaret Gathoni
+ — 
+01/30/2023 1:41 PM
+1. Partitioning e.g K-means.
+2. Heirarchical e.g agglomerative/ divisive 
+3. Density eg DBSCAN
+Mani Sarkar
+ — 
+01/30/2023 2:28 PM
+And these as well:
+- t-SNE (https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html), t-SNE and clustering (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7561036/)
+- UMAP (https://umap-learn.readthedocs.io/en/latest/), UMAP for clustering (https://umap-learn.readthedocs.io/en/latest/clustering.html) 
+Hsin-Wen Chang
+ — 
+01/30/2023 2:47 PM
+Awesome answers @hannahkariuki @Margaret Gathoni @Mani Sarkar 👍 !  Hierarchical clustering produce hierarchy of clusters by merge smaller clusters into larger ones or divide larger one into smaller ones. The merge or splitting cluster depends on the metric such as Euclidean distance, Manhattan distance, Hamming distance to measure the dissimilarity between the sets of data instances. K- means clustering is suitable for large number of data points and uses far lesser iterations than the Hierarchical clustering, it assigns the data points to k clusters so each data point belong to the cluster with the closest mean.
+
+Jan31, 23
+Differentiate between Partitioning method and Hierarchical method 🤔 .
+
+Margaret Gathoni
+ — 
+Yesterday at 2:34 PM
+For partitioning you set the number of clusters (k) before hand while for hierarchical  you don't but the model itself dictates the number of important clusters to return
+Hsin-Wen Chang
+ — 
+Yesterday at 3:55 PM
+Good answer @Margaret Gathoni 👍 ! A partition clustering is a division of the set of data objects into non-overlapping clusters thus each object is in exactly one cluster while hierarchical clustering is a set of nested clusters which are organized as a tree and is generally faster than hierarchical clustering. Another part like @Margaret Gathoni said hierarchical clustering does not require any input parameters while the partition clustering algorithms require the number of clusters to begin.
