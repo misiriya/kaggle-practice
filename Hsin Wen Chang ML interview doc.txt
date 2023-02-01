@@ -533,3 +533,19 @@ Hsin-Wen Chang
  — 
 Yesterday at 3:55 PM
 Good answer @Margaret Gathoni 👍 ! A partition clustering is a division of the set of data objects into non-overlapping clusters thus each object is in exactly one cluster while hierarchical clustering is a set of nested clusters which are organized as a tree and is generally faster than hierarchical clustering. Another part like @Margaret Gathoni said hierarchical clustering does not require any input parameters while the partition clustering algorithms require the number of clusters to begin.
+
+Feb1, 23
+How do you select k for K-Means Clustering algorithm 😵‍💫 ?
+
+Vijaya Tatavarty
+ — 
+Today at 12:39 PM
+Using elbow method
+Margaret Gathoni
+ — 
+Today at 1:00 PM
+The Silhouette Method using the silhouette score, Elbow method using Within-cluster sum of squares (WCSS),  Interclass-intraclass distance ratio method using the Calinski-Harabasz index,
+Hsin-Wen Chang
+ — 
+Today at 2:51 PM
+Excellent answers @Margaret Gathoni @Vijaya Tatavarty 🎉 ! We want to minimize k while also minimizing average cluster variance at the same time. We can plot the number of clusters vs the average cluster variance and choose the value of k when adding more clusters doesn't have a significant impact on the cluster variance.
