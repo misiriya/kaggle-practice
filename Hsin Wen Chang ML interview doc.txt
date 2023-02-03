@@ -549,3 +549,42 @@ Hsin-Wen Chang
  — 
 Today at 2:51 PM
 Excellent answers @Margaret Gathoni @Vijaya Tatavarty 🎉 ! We want to minimize k while also minimizing average cluster variance at the same time. We can plot the number of clusters vs the average cluster variance and choose the value of k when adding more clusters doesn't have a significant impact on the cluster variance.
+
+Feb2, 23
+How would you assess the quality of the Clustering technique 🥸 ?
+
+Margaret Gathoni
+ — 
+Yesterday at 1:18 PM
+Using evaluation metrics such as Silhouette score, WCSS
+Hsin-Wen Chang
+ — 
+Yesterday at 3:07 PM
+Awesome answer @Margaret Gathoni 🎉 ! Detail reading:
+https://www.sciencedirect.com/topics/computer-science/clustering-quality
+
+Feb3, 23
+What is Principal Component Analysis?🤓
+
+Faith Were
+ — 
+Today at 1:00 PM
+PCA is used in Machine Learning for predictive models.
+It is a Statistical procedure that uses orthogonal transformation that converts a set of correlated to uncorrelated variables. It is also used in EDA (Exploratory Data Analysis).
+hannahkariuki
+ — 
+Today at 1:08 PM
+Principal Component Analysis is an unsupervised algorithm for dimensionality reduction of data where most variables are correlated. PCA achieves dimensionality reduction through transforming correlated variables to a new set of variables (PCs)which are uncorrelated such that the first few PCs retain most of the information present in the original variables. The Principal Components (PCs) are a linear combination of the original variables. 
+Margaret Gathoni
+ — 
+Today at 1:22 PM
+PCA is basically a statistical procedure to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables. Each of the principal components is chosen in such a way so that it would describe most of them still available variance and all these principal components are orthogonal to each other. In all principal components first principal component has a maximum variance.
+Kehinde Olalekan
+ — 
+Today at 1:54 PM
+Principal Component Analysis (PCA) is a dimensionality-reduction method often used to reduce the dimensionality of large datasets by transforming a large set of variables into a smaller one that still contains most of the information in the large set.
+Hsin-Wen Chang
+ — 
+Today at 2:37 PM
+Excellent answers @hannahkariuki @Margaret Gathoni @Kehinde Olalekan 🥳 ! @Faith Were  very close PCA is a dimensionality reduction technique and a data pre-processing technique which transform a high dimensional feature space into smaller components that still retain most of the relevant information like @Margaret Gathoni and @Faith Were said the first component has the maximum variance in the data followed by the second component and so on with the constraint that all the components are orthogonal to each other. 
+
