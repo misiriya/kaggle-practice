@@ -588,3 +588,22 @@ Hsin-Wen Chang
 Today at 2:37 PM
 Excellent answers @hannahkariuki @Margaret Gathoni @Kehinde Olalekan 🥳 ! @Faith Were  very close PCA is a dimensionality reduction technique and a data pre-processing technique which transform a high dimensional feature space into smaller components that still retain most of the relevant information like @Margaret Gathoni and @Faith Were said the first component has the maximum variance in the data followed by the second component and so on with the constraint that all the components are orthogonal to each other. 
 
+Feb6, 23
+Are Dimensionality Reduction techniques Supervised or Unsupervised learning 🤓 ?
+
+Faith Were
+ — 
+Today at 12:39 PM
+Dimensionality reduction is unsupervised learning, this is because they don't use further information of the data such as class labels and can allow an unbiased view of the structure within the data.
+Margaret Gathoni
+ — 
+Today at 1:23 PM
+Unsupervised learning. However, we can use techniques like LDA in supervised learning for data transformation during pre-processing
+hannahkariuki
+ — 
+Today at 1:26 PM
+Most dimensionality reduction methods are unsupervised like PCA. But there are other supervised dimensionality reduction methods like NCA
+Hsin-Wen Chang
+ — 
+Today at 2:16 PM
+Good answers @Margaret Gathoni @hannahkariuki 🥳 ! Very close @Faith Were 💪 ! In general, we use dimension reduction technique for unsupervised learning tasks but they can also be used in supervised learning such as @Margaret Gathoni said Linear Discriminant Analysis (LDA) which is designed to find low dimensional projection that maximizes the class separation another one like Partial Least Squares (PLS) which looks for the projections having the highest covariance with the group labels. Another one like @hannahkariuki said is Neighborhood Components Analysis (NCA)  which automatically selecting the most significant features that a stochastic nearest neighbor algorithm will give the best accuracy. 
