@@ -607,3 +607,23 @@ Hsin-Wen Chang
  — 
 Today at 2:16 PM
 Good answers @Margaret Gathoni @hannahkariuki 🥳 ! Very close @Faith Were 💪 ! In general, we use dimension reduction technique for unsupervised learning tasks but they can also be used in supervised learning such as @Margaret Gathoni said Linear Discriminant Analysis (LDA) which is designed to find low dimensional projection that maximizes the class separation another one like Partial Least Squares (PLS) which looks for the projections having the highest covariance with the group labels. Another one like @hannahkariuki said is Neighborhood Components Analysis (NCA)  which automatically selecting the most significant features that a stochastic nearest neighbor algorithm will give the best accuracy. 
+
+Feb7, 23
+List some of the ways of reducing the dimensionality of the given dataset 🤓
+
+Margaret Gathoni
+ — 
+Today at 12:13 PM
+LDA, PCA, Factor Analysis and SVD
+Harini Anand
+ — 
+Today at 12:21 PM
+Feature selection and Feature Extraction?
+hannahkariuki
+ — 
+Today at 12:31 PM
+Feature selection which involves selecting a subset of the original features and feature extraction which involves transforming the data from high dimensional space to low dimensional space.
+Hsin-Wen Chang
+ — 
+Today at 2:47 PM
+Good answers @Margaret Gathoni @Harini Anand @hannahkariuki 🥳 ! Like @Margaret Gathoni said in PCA features are transformed into a new set of features much lesser compare to the origin which are linear combination of the original features. Forward and Backward Feature Elimination. LDA which we already discussed in previous question. Generalized discriminant analysis (GDA) for nonlinear discriminant analysis using the kernel function operator. Thank you @hannahkariuki for the awesome explanation🚀 !
