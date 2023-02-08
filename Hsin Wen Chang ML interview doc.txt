@@ -627,3 +627,15 @@ Hsin-Wen Chang
  — 
 Today at 2:47 PM
 Good answers @Margaret Gathoni @Harini Anand @hannahkariuki 🥳 ! Like @Margaret Gathoni said in PCA features are transformed into a new set of features much lesser compare to the origin which are linear combination of the original features. Forward and Backward Feature Elimination. LDA which we already discussed in previous question. Generalized discriminant analysis (GDA) for nonlinear discriminant analysis using the kernel function operator. Thank you @hannahkariuki for the awesome explanation🚀 !
+
+Feb8, 23
+How would you reduce the dimensionality of a dataset which has correlated features? 🤓
+
+Margaret Gathoni
+ — 
+Today at 1:51 PM
+PCA helps transform correlated feature into uncorrelated features. Feature selection can also be used when you have important features that have high  correlation with the target variable and select a subset of these features. LDA in case of class separation.
+Hsin-Wen Chang
+ — 
+Today at 3:37 PM
+Good answer @Margaret Gathoni 🥳 ! We can use the linear correlation node calculates the correlation coefficient for all the pairs of numerical columns in the dataset as the Pearson's Product Moment coefficient and for all pairs of nominal columns as the Pearson's chi square value. We can use it to build the correlation matrix for the features and for all the pairs of columns with correlation higher than a given threshold remove one of the two features.
