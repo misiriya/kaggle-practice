@@ -639,3 +639,26 @@ Hsin-Wen Chang
  — 
 Today at 3:37 PM
 Good answer @Margaret Gathoni 🥳 ! We can use the linear correlation node calculates the correlation coefficient for all the pairs of numerical columns in the dataset as the Pearson's Product Moment coefficient and for all pairs of nominal columns as the Pearson's chi square value. We can use it to build the correlation matrix for the features and for all the pairs of columns with correlation higher than a given threshold remove one of the two features.
+
+Feb9, 23
+What is the difference between density-sparse data and dimensionally sparse data 🤓 ?
+
+Margaret Gathoni
+ — 
+Today at 2:03 PM
+Data that is densely sparse contains a high percentage of null values, and data that is dimensionally sparse has a large feature space with redundant or complimentary features. Learnt this from your daily ML question. Xiexie
+Hsin-Wen Chang
+ — 
+Today at 3:48 PM
+Good answer @Margaret Gathoni 🥳 ! One more thing is density-sparse data means high percentage of the data contain null or 0 values. No need to say xie xie to me thank you is enough 🤓
+Oops. I found out I already ask this question before I should change a new one 😅 . 
+Our Machine Learning interview question for the day: Is it beneficial to perform dimensionality reduction before fitting an SVM? Why or why not?🤓
+'Toba Adesugba
+ — 
+Today at 4:10 PM
+I think it is beneficial to perform dimensionality reduction before fitting on SVM because SVM performs better on smaller datasets and reduced features
+Hsin-Wen Chang
+ — 
+Today at 5:05 PM
+Very close @'Toba Adesugba 💪 ! Reducing the number of features will definitely reduce the computational complexity of the model but it may not improve the performance of SVM since SVM already uses regularization to avoid overfitting that's why performing dimensionality reduction before SVM may not improve the performance of the SVM classifier unless we have a vey large number of features.
+
