@@ -662,3 +662,14 @@ Hsin-Wen Chang
 Today at 5:05 PM
 Very close @'Toba Adesugba 💪 ! Reducing the number of features will definitely reduce the computational complexity of the model but it may not improve the performance of SVM since SVM already uses regularization to avoid overfitting that's why performing dimensionality reduction before SVM may not improve the performance of the SVM classifier unless we have a vey large number of features.
 
+feb10, 23
+Is rotation necessary in PCA? Why or why not 🧐 ?
+
+hannahkariuki
+ — 
+Today at 12:39 PM
+The rotation in PCA is necessary to increase interpretation of the Principal Components (PCs). Each PC can be interpreted as the direction that's uncorrelated to the previous PCs. This aids in the selection of new features according to how important they're in explaining the data. 
+Hsin-Wen Chang
+ — 
+Today at 2:45 PM
+Good answer @hannahkariuki 🥳 ! Like you said the rotation is necessary because it maximizes the difference between the variance captured by the components making them easier to interpret. The rotation only changes the actual coordinates of the points and not the relative location of the components. Without the rotation, we will have to select more number of components thereby lower down the effect of PCA.
