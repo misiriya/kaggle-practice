@@ -673,3 +673,16 @@ Hsin-Wen Chang
  — 
 Today at 2:45 PM
 Good answer @hannahkariuki 🥳 ! Like you said the rotation is necessary because it maximizes the difference between the variance captured by the components making them easier to interpret. The rotation only changes the actual coordinates of the points and not the relative location of the components. Without the rotation, we will have to select more number of components thereby lower down the effect of PCA.
+
+Feb13, 23
+What do you understand by variance threshold approach 🤓 ?
+
+Margaret Gathoni
+ — 
+Today at 1:05 PM
+Variance thresholds are used in feature selection in machine learning to remove values whose variance does not meet a threshold. Generally, variance measures how closely values are spread to the mean. A low variance means they are more similar to the mean, which means they may not be helpful for building a predictive model since they share the same values for all samples. In contrast, values with high variances are spread out from the mean, so they can provide more information and relevance when building a predictive model. The threshold is usually set, and features above the threshold are considered features of importance, while features below the threshold are not included in modeling (usually dropped).
+Hsin-Wen Chang
+ — 
+Today at 2:40 PM
+Wow excellent answer @Margaret Gathoni 🎉 ! The variance threshold approach is a simple baseline approach used for feature selection that low variance implies a less significant feature so we can remove all the features whose variances don't meet some threshold. Like @Margaret Gathoni said it removes all the features that have the same value in all samples since the variance threshold method considers only the features not the outputs we can use it in Unsupervised learning problems.
+
