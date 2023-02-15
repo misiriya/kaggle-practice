@@ -706,8 +706,12 @@ Yesterday at 4:22 PM
 @Hsin-Wen Chang Following you, can I ask an interesting question here. I found the answer for it, after giving it a thought. 
 Should I build a word cloud before the data preprocessing steps or after?
 Word cloud is often EDA right? Is there a particular order to do EDA, Data pre-processing steps?
-
+ 
+Margaret Gathoni
+ — 
+Yesterday at 4:43 PM
 parameter tuning, using different algorithm,
+ 
 Hsin-Wen Chang
  — 
 Yesterday at 4:47 PM
@@ -743,3 +747,24 @@ https://www.kaggle.com/code/jagangupta/stop-the-s-toxic-comments-eda
 https://www.kaggle.com/code/rhodiumbeng/classifying-multi-label-comments-0-9741-lb
 https://www.kaggle.com/code/longtng/nlp-preprocessing-feature-extraction-methods-a-z 
 
+Feb15, 23
+What are the different steps in performing Text classification?🤓
+anirban chatterjee
+ — 
+Today at 3:16 PM
+Data Collection (most difficult step for me): cleaning, labeling, EDA 
+
+Data Preprocessing : text cleaning (removing special characters, numbers, and punctuation), lowercasing, stemming or lemmatization, and stopword removal.
+
+Feature Extraction (Model cannot understand text, only numbers):  bag of words, n-grams, TF-IDF, word embeddings or sentence embeddings.
+
+Modelling: Training and tuning 
+Hsin-Wen Chang
+ — 
+Today at 4:44 PM
+Good approach🥳 @anirban chatterjee ! 
+In general a text classification pipeline involves following steps:
+1. Text cleaning
+2. Text annotation to create the features
+3. Converting those features into actual predictors
+4. Using the predictors to train the model
