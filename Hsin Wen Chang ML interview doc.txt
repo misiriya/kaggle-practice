@@ -686,3 +686,60 @@ Hsin-Wen Chang
 Today at 2:40 PM
 Wow excellent answer @Margaret Gathoni 🎉 ! The variance threshold approach is a simple baseline approach used for feature selection that low variance implies a less significant feature so we can remove all the features whose variances don't meet some threshold. Like @Margaret Gathoni said it removes all the features that have the same value in all samples since the variance threshold method considers only the features not the outputs we can use it in Unsupervised learning problems.
 
+Feb14, 23
+What would you do if the training results in very low accuracy?🤓
+
+'Toba Adesugba
+ — 
+Yesterday at 2:14 PM
+Hyperparameter tuning is a good choice but I don't think it increases the accuracy significantly. Feature engineering is a good way to go to increase your model's accuracy by a large margin.
+
+If you're working with neural networks, making your model more complex by adding new hidden layers could do wonders to the model accuracy.
+Brindha Ganesan
+ — 
+Yesterday at 2:59 PM
+Interesting question. Have to do something more in preprocessing steps? 🤔 I'm currently trying to improve the accuracy of a classification model. Wonder what else to do
+
+Brindha Ganesan
+ — 
+Yesterday at 4:22 PM
+@Hsin-Wen Chang Following you, can I ask an interesting question here. I found the answer for it, after giving it a thought. 
+Should I build a word cloud before the data preprocessing steps or after?
+Word cloud is often EDA right? Is there a particular order to do EDA, Data pre-processing steps?
+
+parameter tuning, using different algorithm,
+Hsin-Wen Chang
+ — 
+Yesterday at 4:47 PM
+Good approach @'Toba Adesugba @Margaret Gathoni  💪 ! If the model is not doing anything better than random choice either there is no connection between the feature and the class. Or we can check if our model is suffering from high bias or high variance problem. Another way we can also test if there's any correlation between the features and try to either use cross validation or remove outliers and redundant features. 
+
+Hsin-Wen Chang
+ — 
+Yesterday at 5:04 PM
+In general, we do EDA first and from the EDA result decide Data pre-processing strategy or we can say we pretty much do EDA and Data pre-processing at the same time.  Data engineers also will do a part of data preprocessing but still as a Data Scientist, you have to process data into appropriate portions and manner through EDA.  Yes, the word cloud is one kind of EDA you should do it both before and after data preprocessing. 
+Brindha Ganesan
+ — 
+Yesterday at 5:07 PM
+Thank you for the insights.
+I got these questions in my mind too today. 
+1. What are all the data preprocessing steps that can be done in a text data column? 
+2. What does normalization mean in text data preprocessing step?
+I’ll try to find the answers myself. Meanwhile, everyone is encouraged to share what they know so far 😄👍
+
+Leonardo Moraes
+ — 
+Yesterday at 5:12 PM
+1. Infinity options.. hahaha
+2. Remove URL, lowercase texts, replace company names for special tags (like [COMPANY]).. Anything that could be useful to simply your texts.
+
+Sometimes a few texts are useless for your application, other times don't. So we don't have an easy way to go with it. You need to try different options
+One big challenge for NLP is work with Twitter data. Imagine how many things you need to do to "normalize" your tweets. Tags, hashtags, URL, abbreviations, etc
+Hsin-Wen Chang
+ — 
+Yesterday at 5:26 PM
+Hello @Brindha Ganesan,
+Detail implementation steps please read the following 3 notebooks these are detail concepts of all the data preprocessing and normalize steps in text data:
+https://www.kaggle.com/code/jagangupta/stop-the-s-toxic-comments-eda
+https://www.kaggle.com/code/rhodiumbeng/classifying-multi-label-comments-0-9741-lb
+https://www.kaggle.com/code/longtng/nlp-preprocessing-feature-extraction-methods-a-z 
+
