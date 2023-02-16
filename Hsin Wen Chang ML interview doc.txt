@@ -768,3 +768,21 @@ In general a text classification pipeline involves following steps:
 2. Text annotation to create the features
 3. Converting those features into actual predictors
 4. Using the predictors to train the model
+
+Feb16, 23
+Do you think using a particular model for training can affect the choice of a Feature Selection method?🤓 
+
+E. Emmanuel Justine
+ — 
+Today at 2:10 PM
+Yes, model choice can affect feature selection. Some model heavily penalizes some errors and lenient on some. For example, Lasso can me usually gives a heavy penalty compared to random forest.
+
+PS: I am not sure error is the actual word for what I want to say. I will appreciate any correction.
+Margaret Gathoni
+ — 
+Today at 2:26 PM
+Yes the choice of model does affect choice of feature selection. Each model has it's rules and assumptions e.g. using let's say a linear regression model. the basic assumption of this model is that the predictor variables and target have a linear relationship. That's why data understanding is crucial when making decision of the model to use.
+Hsin-Wen Chang
+ — 
+Today at 2:46 PM
+Good approach @Margaret Gathoni 🥳 ! @E. Emmanuel Justine Feature selection step is performed before learning a model from the training dataset in general a model does not force you into using a specific feature selection approach. The only way it can affect the feature selection is the model's restriction on what kind of features it can use such as if a model can only learn numerical data then you either don't select a categorical feature or you need to transform it before feeding it to your model this step is know as feature transformation or Feature engineering.
