@@ -786,3 +786,32 @@ Hsin-Wen Chang
  — 
 Today at 2:46 PM
 Good approach @Margaret Gathoni 🥳 ! @E. Emmanuel Justine Feature selection step is performed before learning a model from the training dataset in general a model does not force you into using a specific feature selection approach. The only way it can affect the feature selection is the model's restriction on what kind of features it can use such as if a model can only learn numerical data then you either don't select a categorical feature or you need to transform it before feeding it to your model this step is know as feature transformation or Feature engineering.
+
+Feb17, 23
+ How do you know if your model is overfitting? 🤓
+Margaret Gathoni
+ — 
+Today at 12:02 PM
+When it performs very well on training data but poorly on the test/evaluation set
+Hsin-Wen Chang
+ — 
+Today at 1:31 PM
+Good answer @Margaret Gathoni 💪 ! We can check whether the model overfits is to measure the error on the training and test datasets. If the error on the training dataset is low and high on test and/or validation dataset there likely is overfitting in the model
+anirban chatterjee
+ — 
+Today at 1:39 PM
+- High training accuracy but low validation accuracy: model is memorizing the training data, rather than generalizing to new data.
+
+- Increasing validation loss: model is becoming too complex and is fitting the noise in the data, rather than the underlying patterns.
+
+- Large difference between training and validation accuracy: small difference between the two indicates that the model is generalizing well to new data.
+
+- Poor performance on test data 
+Hsin-Wen Chang
+ — 
+Today at 1:45 PM
+Good answer @anirban chatterjee 💪 🎉 !
+Faith Were
+ — 
+Today at 2:44 PM
+You know your model is overfitting when  the model performs well on the training data but does not perform well on the test data. This is because the model is memorizing the data it has seen and is unable to generalize to new data.
