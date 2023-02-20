@@ -815,3 +815,40 @@ Faith Were
  — 
 Today at 2:44 PM
 You know your model is overfitting when  the model performs well on the training data but does not perform well on the test data. This is because the model is memorizing the data it has seen and is unable to generalize to new data.
+
+Feb20, 23
+What do you mean by Term Frequency and Inverse Document
+Frequency?🤔
+
+Margaret Gathoni
+ — 
+Today at 12:16 PM
+Number of times a word appears in a document vs if the word it self is a common word. To my understanding
+Hsin-Wen Chang
+ — 
+Today at 3:41 PM
+Good approach @Margaret Gathoni 💪 ! Term Frequency (tf) is the number of times a term occurs in a document divided by the total number of terms in the document. Inverse Document frequency (idf) is a measure of how relevant is the term across all the documents. It's the logarithmic of (total number of documents divided by the number of documents containing the term).
+Margaret Gathoni
+ — 
+Today at 4:16 PM
+Awesome. Thank you for the clarification
+Hsin-Wen Chang
+ — 
+Today at 4:52 PM
+You are welcome @Margaret Gathoni 🤓 !
+anirban chatterjee
+ — 
+Today at 5:23 PM
+Let's say we have a corpus of two documents, A and B. Document A contains the word "data" twice and has a total of 100 words, while document B contains "data" once and has a total of 50 words. The TF-IDF score for the word "data" in document A would be:
+
+TF = (2/100) = 0.02
+IDF = log_e(2/2) = 0
+TF-IDF = 0.02 * 0 = 0
+
+The TF-IDF score for the word "data" in document B would be:
+
+TF = (1/50) = 0.02
+IDF = log_e(2/1) = 0.693
+TF-IDF = 0.02 * 0.693 = 0.01386
+
+In this example, we can see that the TF-IDF score for "data" is higher in document B, even though it appears fewer times. This is because the word "data" is more unique to document B, making it a better indicator of the document's content.
