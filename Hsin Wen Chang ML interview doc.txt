@@ -852,3 +852,24 @@ IDF = log_e(2/1) = 0.693
 TF-IDF = 0.02 * 0.693 = 0.01386
 
 In this example, we can see that the TF-IDF score for "data" is higher in document B, even though it appears fewer times. This is because the word "data" is more unique to document B, making it a better indicator of the document's content.
+
+Feb21, 23
+How do you ensure that you are not overfitting a model? 🤔
+
+Nels
+ — 
+Today at 12:29 PM
+I have actually experienced model overfitting in real-life project. For my case, the overfitting was inherited from the limited data amount that unfortunately had very many features. This coupled with the complexity of my model, made the situation even worse. Luckily enough, i was able to detect the overfitting via comparison of the prediction accuracy on training and validation dataset. I reduced the overfitting through:
+
+1.  Selecting only  the most important features for training--preventing the model from learning from so many features.
+2. I also increased my current dataset volume  through data augmentation technique--the goal was to artificially increase the size of my dataset. 
+3. L1 / L2 regularization technique.
+The game of penalty term on the model's cost function also reduced the overfitting of my model.
+4. Early stopping. I believe that one can also reduce overfitting by tracking the trajectories of the validation loss, when it begins to increase, immediately stop the training and save the current model.
+Hsin-Wen Chang
+ — 
+Today at 3:51 PM
+Good answer @Nels 🥳 ! There are three main methods to avoid overfitting:
+1. Like @Nels and I mentioned previous day we can keep the model simple: reduce the variance by taking into account fewer variables and parameters thus removing some of the noise in the training data.
+2. Use cross-validation which performs multiple splitting of the dataset into training and test dataset. Train a model for each one of them then select the best learned model with least error or highest accuracy on the test dataset.
+3. Use regularization techniques like LASSO or Ridge regression which penalize certain model parameters if they are likely to cause overfitting. 
