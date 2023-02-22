@@ -873,3 +873,21 @@ Good answer @Nels 🥳 ! There are three main methods to avoid overfitting:
 1. Like @Nels and I mentioned previous day we can keep the model simple: reduce the variance by taking into account fewer variables and parameters thus removing some of the noise in the training data.
 2. Use cross-validation which performs multiple splitting of the dataset into training and test dataset. Train a model for each one of them then select the best learned model with least error or highest accuracy on the test dataset.
 3. Use regularization techniques like LASSO or Ridge regression which penalize certain model parameters if they are likely to cause overfitting. 
+
+Feb22, 23
+What is the difference between Feature Selection and Feature Extraction 🤓 ?
+
+Margaret Gathoni
+ — 
+Today at 12:39 PM
+The difference is in the method used, Lets say the data set used have varying value ranges(or maybe categorical values) of the variables; a form of feature extraction would be using method like dimensionality reduction(e.g PCA) where we create complete new values to represent the variables. a form of feature selection would be selecting set of relevant features where we would use VIF to make the judgement call and use the relevant features for modelling instead of all of them.
+anirban chatterjee
+ — 
+Today at 4:17 PM
+In Feature selection, we eliminate irrelevant or redundant features that may negatively impact the performance of the model or increase its complexity. 
+
+Feature extraction is when there are correlations among original features that can be captured in a lower dimensionality, that captures the most important information from the original features.
+Hsin-Wen Chang
+ — 
+Today at 4:44 PM
+Good approach @Margaret Gathoni @Margaret Gathoni 💪 ! Feature selection means selecting a subset of features from the given features. Some of the ways to perform feature selection are Forward Selection and backward Elimination. On the other hand feature extraction means projecting the given feature space into a new feature space such as in SVD and PCA.
