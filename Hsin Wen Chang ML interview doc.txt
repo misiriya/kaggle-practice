@@ -892,7 +892,7 @@ Hsin-Wen Chang
 Today at 4:44 PM
 Good approach @Margaret Gathoni @Margaret Gathoni 💪 ! Feature selection means selecting a subset of features from the given features. Some of the ways to perform feature selection are Forward Selection and backward Elimination. On the other hand feature extraction means projecting the given feature space into a new feature space such as in SVD and PCA.
 
-Feb23, 22
+Feb23, 23
 Explain cosine similarity in a simple way 🤔 ?
 
 Margaret Gathoni
@@ -908,7 +908,7 @@ Hsin-Wen Chang
 Yesterday at 4:36 PM
 Good answer @Margaret Gathoni  💪 ! Like @Margaret Gathoni and @Nels mentioned cosine similarity captures the similarity between 2 vectors each document and the query is written as a vector of terms. The cosine is calculated for the query vector with each document which is normal cosine between two vectors. The resulting cosine value represents the similarity of the document with the given query. If the cosine value is 0 there is no similarity at all and if is 1 the document is the same as the query. Detail reading: https://mtham8.github.io/tf-idf/
 
-Feb24, 22
+Feb24, 23
 Explain N-gram method 🤔 ?
 
 Margaret Gathoni
@@ -919,4 +919,21 @@ Hsin-Wen Chang
  — 
 Today at 2:57 PM
 Good answer @Margaret Gathoni 🎉 ! N-gram method is a probabilistic model used to predict an item in a sequence based on the previous n-1 items.
+
+Feb27, 23
+What is a chi-squared test 🤔 ?
+
+Margaret Gathoni
+ — 
+Today at 11:50 AM
+A test used to compare observed vs expected values. So what happens is you get the difference of the two , then square the difference and divide by expected value. You then do this to all categories and then add these values to get the chi square.
+Chiemela Chinedum
+ — 
+Today at 11:51 AM
+A chi-squared test is a statistical test used for categorical data. It is used to determine whether your data is different from what you expected significantly.
+Hsin-Wen Chang
+ — 
+Today at 12:07 PM
+Good approach @Margaret Gathoni @Chiemela Chinedum 💪 ! A chi-squared test is a statistical hypothesis test where the test statistic follows a chi-squared distribution (a distribution of the sum of squared standard normal deviates) under the null hypothesis. It measures how well the
+observed distribution of data fits with the expected distribution if the variables are independent.
 
