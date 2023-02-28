@@ -937,3 +937,24 @@ Today at 12:07 PM
 Good approach @Margaret Gathoni @Chiemela Chinedum 💪 ! A chi-squared test is a statistical hypothesis test where the test statistic follows a chi-squared distribution (a distribution of the sum of squared standard normal deviates) under the null hypothesis. It measures how well the
 observed distribution of data fits with the expected distribution if the variables are independent.
 
+Feb28, 23
+Define F-test. Where would you use it? 🤓
+
+Margaret Gathoni
+ — 
+Today at 12:41 PM
+It used to test the variability of two data set to tell if drawn from normal population
+Chiemela Chinedum
+ — 
+Today at 12:58 PM
+F-test is used to compare the ratio of variances of populations to determine if they are similar or not statistically. 
+It can be used for comparing statistical models that have been fitted to a data set and also by researchers to test the significance of data from a particular population
+Hsin-Wen Chang
+ — 
+Today at 2:35 PM
+Good answer @Chiemela Chinedum @Margaret Gathoni  💪 ,
+An F-test is any statistical hypothesis test where the test statistic follows an F-distribution under the null hypothesis. If we have 2 models that have been fitted to a dataset, we can use F-test to identify the model which best fits the sample population. 
+Faith Were
+ — 
+Today at 3:24 PM
+F-test is a statistical test with an F-distribution under null hypothesis and is used when comparing statistical models fitted on a dataset in order to identify the model that fits best with the sampled population.
