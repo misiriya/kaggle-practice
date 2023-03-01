@@ -958,3 +958,24 @@ Faith Were
  — 
 Today at 3:24 PM
 F-test is a statistical test with an F-distribution under null hypothesis and is used when comparing statistical models fitted on a dataset in order to identify the model that fits best with the sampled population.
+
+Mar1, 23
+How much data should you allocate for your training, validation, and test datasets? 🤔 
+
+Mercy Consolate Akello
+ — 
+Today at 12:30 PM
+Training data should take a large part of data (70/80) % and the validation/ test data should take the smaller part of the data (30/20) %
+Margaret Gathoni
+ — 
+Today at 12:59 PM
+I think it depends on the case scenario and the model to use however a lot of data if needed for training,,but also validation and test data is crucial too,,, so I would say 7:1:2
+Chiemela Chinedum
+ — 
+Today at 1:55 PM
+It actually depends on some factors. 
+Making the training set too small might cause a high variance in the model parameters. Also, there is a potential that the model performance will not be accurately estimated if the test set is too small. It  generally could be 70:30 or 80:20 train/test split
+Hsin-Wen Chang
+ — 
+Today at 3:50 PM
+Good answers @Mercy Consolate Akello @Margaret Gathoni @Chiemela Chinedum 💪 ! There is no single right answer for distributing the data among training, validation and test datasets. If training set is too small, our actual model parameters will have high variance and won't be able to learn accurately. If test set is too small, we will have unreliable estimation of model performance. A good rule of thumbs is to split the training and test dataset in the ratio 80:20. The training set can be further divided into training and validation sets or into partitions for cross-validation to avoid overfitting.
