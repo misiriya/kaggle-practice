@@ -979,3 +979,11 @@ Hsin-Wen Chang
  — 
 Today at 3:50 PM
 Good answers @Mercy Consolate Akello @Margaret Gathoni @Chiemela Chinedum 💪 ! There is no single right answer for distributing the data among training, validation and test datasets. If training set is too small, our actual model parameters will have high variance and won't be able to learn accurately. If test set is too small, we will have unreliable estimation of model performance. A good rule of thumbs is to split the training and test dataset in the ratio 80:20. The training set can be further divided into training and validation sets or into partitions for cross-validation to avoid overfitting.
+
+Mar2, 23
+What could be the reasons for Gradient Descent to converge slowly or not converge at all in various Machine Learning algorithms 🤔 ?
+
+anirban chatterjee
+ — 
+Today at 6:55 PM
+If the learning rate is too high, the algorithm may overshoot the minimum and fail to converge, if the learning rate is too low, the algorithm may take too many iterations to converge.
