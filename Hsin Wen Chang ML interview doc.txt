@@ -987,3 +987,15 @@ anirban chatterjee
  — 
 Today at 6:55 PM
 If the learning rate is too high, the algorithm may overshoot the minimum and fail to converge, if the learning rate is too low, the algorithm may take too many iterations to converge.
+Hsin-Wen Chang
+ — 
+Today at 12:16 PM
+Good answer @anirban chatterjee 🎉 If the step size or learning rate is too small, our function will take a long time to converge, and if it is too large, our function may jump around the optimum value and not converge. It may converge slowly in case of a Symmetric Positive Definite (SPD) matrix. The eigenvalues lay down the curvature of the function, and in case of SPD, they are all positive and generally different, which leads to a non-circular contour such that converging to the optimal point would take a lot of steps. In short, the more circular the contour is, the faster our algorithm would converge. Sometimes, due to the rounding errors, the Gradient Descent may not converge at all. The gradient descent method generally stops when the expected cost/error is either zero or very small. However, because of the rounding errors, our error might never become absolute zero, in this case our algorithm would keep converging.  If our function does not have a minimum, the gradient descent would continue to descend forever. Some functions are not differentiable in certain regions, and the gradient cannot be calculated at those points. One thing need to correct neural network models are  part of Advanced Learning Algorithms detail read: https://github.com/shantanu1109/Coursera-DeepLearning.AI-Stanford-University-Machine-Learning-Specialization/blob/main/Course-2-Advanced-Learning-Algorithms/Course-2-Week-2/Course-2-Week-2-Lecture-Slides/Course-2-Week-2.pdf 
+
+Mar3, 23
+What is a probabilistic graphical model? What is the difference between Markov Networks and Bayesian Networks 🤔 ?
+
+Margaret Gathoni
+ — 
+Today at 3:20 PM
+PGM shows probability distribution and relationship between variables. They are two types which is BN and MN with differentiating factor being how relationship between variables are encoded. for example for BN  it models conditional independence among variables using directed edges, while MN use undirected edges to model pairwise independence.
