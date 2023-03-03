@@ -999,3 +999,9 @@ Margaret Gathoni
  — 
 Today at 3:20 PM
 PGM shows probability distribution and relationship between variables. They are two types which is BN and MN with differentiating factor being how relationship between variables are encoded. for example for BN  it models conditional independence among variables using directed edges, while MN use undirected edges to model pairwise independence.
+Hsin-Wen Chang
+ — 
+Today at 5:03 PM
+Good answer @Margaret Gathoni 🥳 ! Your answer is very creative. A probabilistic graphical model represents the conditional dependency among the random variables in a graph structure. It used in modeling a large number of random variables with complex interactions with each other. Like @Margaret Gathoni said the two branches of the graphical representation of the distribution are Markov Network and Bayesian Networks. They differ in the set of independence that they can encode.
+Bayesian Networks (When the model structure is a Directed Acyclic Graph (DAG), the model represents a factorization of the joint probability of all the random variables. It capture the conditional in dependance between the random variables, reduce the number of parameters required to estimate the joint probability distribution) .
+While Markov Networks are used when the underlying network structure is an undercut graph follow the Markov process such as given the current state. Markov Networks represent the distribution of the sequence of the nodes.
