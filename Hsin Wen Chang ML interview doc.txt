@@ -1005,3 +1005,15 @@ Today at 5:03 PM
 Good answer @Margaret Gathoni 🥳 ! Your answer is very creative. A probabilistic graphical model represents the conditional dependency among the random variables in a graph structure. It used in modeling a large number of random variables with complex interactions with each other. Like @Margaret Gathoni said the two branches of the graphical representation of the distribution are Markov Network and Bayesian Networks. They differ in the set of independence that they can encode.
 Bayesian Networks (When the model structure is a Directed Acyclic Graph (DAG), the model represents a factorization of the joint probability of all the random variables. It capture the conditional in dependance between the random variables, reduce the number of parameters required to estimate the joint probability distribution) .
 While Markov Networks are used when the underlying network structure is an undercut graph follow the Markov process such as given the current state. Markov Networks represent the distribution of the sequence of the nodes.
+
+Mar6, 23
+ How would you handle the scenario where your dataset has missing or dirty (garbled) values 🤓 ?
+ 
+Margaret Gathoni
+ — 
+Today at 12:55 PM
+personally I check the percentage that's missing if it's above like 50% I drop the columns, below 50% I now deal with them in different ways. First I check for skewness to know if to use  measures of central tendency or go a different route. If data is skewed I interpolate; if not skewed I use either mean/mode/median depending on the variable values and data type.
+Hsin-Wen Chang
+ — 
+Today at 3:52 PM
+Good answer @Margaret Gathoni 👍 . These kind of situations are very common in real life sometimes the data is missing or empty or have some unexpected values such as special characters while performing data transformations or saving/fetching the data from the client/server sometimes we expect an ASCII string but receive a Unicode string this may result in garbled data in our string. Like @Margaret Gathoni said we can either drop those row or columns or replace the missing/garbled values with other values such as the mean value of that column or the most occurring value. The latter case is known as "Parameter Estimation". Expectation Maximization (EM) is one of the algorithms used for this case. It's an iterative method to find the maximum likelihood or maximum a posteriori (MAP) estimates of the parameters in statistical models.
