@@ -1017,3 +1017,25 @@ Hsin-Wen Chang
  — 
 Today at 3:52 PM
 Good answer @Margaret Gathoni 👍 . These kind of situations are very common in real life sometimes the data is missing or empty or have some unexpected values such as special characters while performing data transformations or saving/fetching the data from the client/server sometimes we expect an ASCII string but receive a Unicode string this may result in garbled data in our string. Like @Margaret Gathoni said we can either drop those row or columns or replace the missing/garbled values with other values such as the mean value of that column or the most occurring value. The latter case is known as "Parameter Estimation". Expectation Maximization (EM) is one of the algorithms used for this case. It's an iterative method to find the maximum likelihood or maximum a posteriori (MAP) estimates of the parameters in statistical models.
+
+julia-suzuki
+ — 
+Yesterday at 7:46 PM
+"Parameter Estimation" sounds like "Imputation". Are they the same. If they are different, how so?
+Hsin-Wen Chang
+ — 
+Today at 12:29 PM
+Imputation is one of the algorithms to perform Parameter Estimation like Expectation Maximization (EM) is one of the algorithms to perform Parameter Estimation which also impute the values. They are all used to estimate the missing/garbled values.
+ Detail readings:
+https://stackoverflow.com/questions/58364751/how-to-implement-expectation-maximization-imputation-method-using-python
+https://towardsdatascience.com/handling-missing-data-like-a-pro-part-3-model-based-multiple-imputation-methods-bdfe85f93087
+https://yangxiaozhou.github.io/data/2020/10/20/EM-algorithm-explained.html
+https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values 
+
+Mar7, 23
+What is Expectation Maximization (EM) algorithm? 🤓
+
+Margaret Gathoni
+ — 
+Today at 1:52 PM
+From the reading above, Expectation Maximization (EM)  is an iterative suitable to handle missing data since it handles unobserved variables. Normally it inputs missing values using the maximum likelihood with help of present variables, generates the parameters, reinputs the values based on the parameter estimate and then  the parameter based on the imputed data. This process continues until the parameter estimates are no longer changing as per the set threshold.
