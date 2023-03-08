@@ -1039,3 +1039,17 @@ Margaret Gathoni
  — 
 Today at 1:52 PM
 From the reading above, Expectation Maximization (EM)  is an iterative suitable to handle missing data since it handles unobserved variables. Normally it inputs missing values using the maximum likelihood with help of present variables, generates the parameters, reinputs the values based on the parameter estimate and then  the parameter based on the imputed data. This process continues until the parameter estimates are no longer changing as per the set threshold.
+
+Mar8, 23
+How can you get an unbiased estimate of the accuracy of the learned model 🤓 ?
+
+anirban chatterjee
+ — 
+Today at 3:33 PM
+Divide the input dataset into training and test datasets. Build the model using
+the training dataset and measure its accuracy on the test dataset.
+ 
+For better results, one can use Cross-validation to run multiple iterations of partitioning
+the dataset into the training and test datasets, analyze the accuracy of the
+learned model in each iteration and finally use the best model from the
+learned models.
