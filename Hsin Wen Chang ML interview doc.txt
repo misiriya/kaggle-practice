@@ -1053,3 +1053,12 @@ For better results, one can use Cross-validation to run multiple iterations of p
 the dataset into the training and test datasets, analyze the accuracy of the
 learned model in each iteration and finally use the best model from the
 learned models.
+
+Mar9, 23
+How do we estimate the coefficients in Logistic Regression 🤔 ?
+
+Margaret Gathoni
+ — 
+Today at 11:35 AM
+Given a collection of predictors, the logistic regression model evaluates the likelihood of an event occurring. In logistic regression, the coefficients represent the change in log-odds of the dependent variable per unit change in the independent variable. Maximum likelihood estimation is the most commonly used approach for estimating the coefficients in logistic regression (MLE). MLE's purpose is to identify the coefficient values that optimize the likelihood of witnessing the data. The likelihood is a function of the model's parameters (coefficients), and it indicates how well the model fits the data.
+
