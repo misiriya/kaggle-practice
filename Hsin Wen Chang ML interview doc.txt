@@ -1061,4 +1061,24 @@ Margaret Gathoni
  — 
 Today at 11:35 AM
 Given a collection of predictors, the logistic regression model evaluates the likelihood of an event occurring. In logistic regression, the coefficients represent the change in log-odds of the dependent variable per unit change in the independent variable. Maximum likelihood estimation is the most commonly used approach for estimating the coefficients in logistic regression (MLE). MLE's purpose is to identify the coefficient values that optimize the likelihood of witnessing the data. The likelihood is a function of the model's parameters (coefficients), and it indicates how well the model fits the data.
+Hsin-Wen Chang
+ — 
+Today at 11:58 AM
+Good answer @Margaret Gathoni 💪 ! Remember put (MLE) after Maximum likelihood estimation. We also can use  Stochastic Gradient Descent calculate a prediction using the current values of the coefficients base on the prediction error then update the coefficient values iteratively until the accuracy reaches a threshold.
+
+Mar10, 23
+How can you speed up the k-NN’s computation  classification/prediction time? 🤓
+
+Margaret Gathoni
+ — 
+Today at 5:19 PM
+dimensionality reduction, feature selection, using the best approximate k-NN
+Hsin-Wen Chang
+ — 
+Today at 5:43 PM
+Good answer @Margaret Gathoni 💪 ! We can apply an undersampling method call Edited Nearest Neighbor (ENN) which only use a subset of training dataset and still able to provide accurate classification
+https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling.EditedNearestNeighbours.html
+Another way we can use KD tree perform nearest neighbor and range searches.
+https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html 
+
 
