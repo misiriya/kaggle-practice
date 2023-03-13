@@ -1081,4 +1081,19 @@ https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling
 Another way we can use KD tree perform nearest neighbor and range searches.
 https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html 
 
+mar11, 23
+What is a Decision Tree? 🤔
+
+Sesugh Abenga
+ — 
+Today at 12:42 PM
+It's a Binary Tree based algorithm that recursively  splitts the data till we have pure leaves. This algorithm can be used for Classification and Regression Problem.
+Margaret Gathoni
+ — 
+Today at 12:49 PM
+It a supervised machine learning algorithm that's non parametric where data is split according to a certain parameter. The tree is normal defined by nodes and leaves which helps to further breakdown the data. It can be used for both classification and regression case.
+Hsin-Wen Chang
+ — 
+Today at 3:46 PM
+Good approaches @Margaret Gathoni @Sesugh Abenga 🙌 🥳 ! Decision tree can handle numerical or  categorical feature. The leaf nodes represent all the possible outcomes within the dataset. The feature at each node is calculate based on the information gain and the one with the maximum gain is more valuable. Detail readings: https://www.ibm.com/topics/decision-trees 
 
