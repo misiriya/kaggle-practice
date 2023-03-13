@@ -1081,7 +1081,7 @@ https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling
 Another way we can use KD tree perform nearest neighbor and range searches.
 https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html 
 
-mar11, 23
+mar13, 23
 What is a Decision Tree? 🤔
 
 Sesugh Abenga
