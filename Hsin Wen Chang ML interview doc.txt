@@ -1097,3 +1097,10 @@ Hsin-Wen Chang
 Today at 3:46 PM
 Good approaches @Margaret Gathoni @Sesugh Abenga 🙌 🥳 ! Decision tree can handle numerical or  categorical feature. The leaf nodes represent all the possible outcomes within the dataset. The feature at each node is calculate based on the information gain and the one with the maximum gain is more valuable. Detail readings: https://www.ibm.com/topics/decision-trees 
 
+Mar14, 23
+May you describe when we will need to use a decision tree? Can you also provide the disadvantages using a decision tree? 🤔
+
+Sesugh Abenga
+ — 
+Today at 2:30 PM
+Decision Tree can be used when the problem requires a simple model and explainable, that needs limited computation power. As for the disadvantages.. Its prone to overfiting and a little change in the data can lead to different tree. Also produces imbalance trees using imbalance data.
