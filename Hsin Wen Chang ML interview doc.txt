@@ -1104,3 +1104,17 @@ Sesugh Abenga
  — 
 Today at 2:30 PM
 Decision Tree can be used when the problem requires a simple model and explainable, that needs limited computation power. As for the disadvantages.. Its prone to overfiting and a little change in the data can lead to different tree. Also produces imbalance trees using imbalance data.
+Hsin-Wen Chang
+ — 
+Today at 12:02 PM
+Good answer @Sesugh Abenga 🥳 💪 ! Other con like Decision Trees are not good at applying regression to predict continuous values. Since continuous variable can have an infinite number of values within an interval compare to a tree can only have a limit number of leaves and branches.
+Here is a great discussion of "When Would You Prefer a Decision Tree?" in kaggle learn:
+https://www.kaggle.com/discussions/getting-started/60582 
+
+Mar15, 23
+What is pruning? 🤓
+
+Margaret Gathoni
+ — 
+Today at 12:48 PM
+Reducing the size of decision tree. It can be through removing redundant features or highly correlated features. Generally through feature selection.
