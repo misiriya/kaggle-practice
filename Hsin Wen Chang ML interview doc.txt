@@ -1118,3 +1118,20 @@ Margaret Gathoni
  — 
 Today at 12:48 PM
 Reducing the size of decision tree. It can be through removing redundant features or highly correlated features. Generally through feature selection.
+Hsin-Wen Chang
+ — 
+Yesterday at 5:56 PM
+Awesome answer @Margaret Gathoni 💪 ! Pruning can help us reduce the complexity by removing subtree whose existence doesn't impact the accuracy  of the model by evaluating the impact of pruning each node on the validation set accuracy removing the one that most improves the tuning dataset accuracy.
+
+Mar16, 23
+How does Regularization help reduce Overfitting? Can you talk a little bit more of different Regularization techniques in Deep Learning? 🤓
+
+Margaret Gathoni
+ — 
+Today at 12:47 PM
+Regularization reduces overfitting by adding penalty to the loss function that encourages smaller weights or fewer non zero weights. Some of regularization techniques include and not limited to L1 and L2. L1 adds penalty to the absolute value of the weight while L2 squares the weights.
+Hsin-Wen Chang
+ — 
+Today at 2:14 PM
+Awesome answer @Margaret Gathoni 💪 🥳 ! A detail reading for this topic:
+https://www.kaggle.com/code/sid321axn/regularization-techniques-in-deep-learning/notebook
