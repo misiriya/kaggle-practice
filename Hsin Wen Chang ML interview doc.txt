@@ -1158,3 +1158,11 @@ anirban chatterjee
  — 
 Today at 1:27 PM
 Autoencoders can learn to compress high-dimensional data into a lower-dimensional representation, and then reconstruct the original data from this representation.
+Hsin-Wen Chang
+ — 
+Yesterday at 3:52 PM
+Awesome answer @Margaret Gathoni @anirban chatterjee 🥳 ! Other methods like Principal Component Analysis (PCA), Kernel Based PCA, Singular Value Decomposition (SVD) and Independent Component Analysis (ICA). Detail readings:
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.FastICA.html
