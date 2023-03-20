@@ -1147,3 +1147,14 @@ Hsin-Wen Chang
 Today at 7:40 PM
 Good approach @Margaret Gathoni 🚀 ,  We can apply RNN seq2seq model here. It is kind like ARIMA models, but much more flexible and expressive. All features (including one-hot encoded) are normalized to zero mean and unit variance. if original time series length is 700 days then we can use 200-day samples for training, we'll have a choice of 500 days to start the sample. This sampling works as effective data augmentation mechanism: training code randomly chooses starting point for each time series on each step, generating endless stream of almost non-repeating data. The Model has two main parts: encoder (cuDNN GRU) and decoder(TF GRUBlockCell). Attention can bring useful information from a distant past to the current RNN cell. We can use fixed-weight sliding-window attention then pass them through fully connected layer to reduce dimensionality and append result to input features for decoder.
 
+Mar20, 23
+Can you list some of some of the Feature extraction techniques used for Dimensionality Reduction? 🤓 
+
+Margaret Gathoni
+ — 
+Today at 1:02 PM
+LDA, PCA, t-SNE
+anirban chatterjee
+ — 
+Today at 1:27 PM
+Autoencoders can learn to compress high-dimensional data into a lower-dimensional representation, and then reconstruct the original data from this representation.
