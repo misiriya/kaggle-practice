@@ -1166,3 +1166,20 @@ https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
 https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html
 https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html
 https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.FastICA.html
+
+Mar21, 23
+Can you list some difference between CatBoost, XGBoost and LightGBM 🥸 ?
+
+anirban chatterjee
+ — 
+Today at 2:39 PM
+CatBoost can handle categorical features directly, without the need for one-hot encoding or label encoding. CatBoost can handle missing values directly, without the need for imputation or pre-processing.
+
+LightGBM is generally the fastest library but XGBoost and CatBoost use a pre-sorting technique, which can be slower on large datasets, but they have been shown to achieve similar or better accuracy compared to LightGBM.
+
+XGBoost and CatBoost may be slower and require more memory for large datasets.LightGBM is generally better suited for large datasets, as it can handle a large number of features and has a low memory footprint. 
+Hsin-Wen Chang
+ — 
+Today at 3:51 PM
+Good try @anirban chatterjee 💪 ! Only two things need to be correct only XGBoost use a pre-sorting technique not CatBoost and CatBoost provides scalability by supporting multi-server distributed GPUs. Its prediction time came out to be faster than XGBoost and LightGBM on large datasets this is extremely important for low latency environments. If it's training time like @anirban chatterjee said LightGBM outperformed every other model in training time. More detail reading:
+https://neptune.ai/blog/when-to-choose-catboost-over-xgboost-or-lightgbm 
