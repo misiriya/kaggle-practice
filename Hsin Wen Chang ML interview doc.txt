@@ -1183,3 +1183,23 @@ Hsin-Wen Chang
 Today at 3:51 PM
 Good try @anirban chatterjee 💪 ! Only two things need to be correct only XGBoost use a pre-sorting technique not CatBoost and CatBoost provides scalability by supporting multi-server distributed GPUs. Its prediction time came out to be faster than XGBoost and LightGBM on large datasets this is extremely important for low latency environments. If it's training time like @anirban chatterjee said LightGBM outperformed every other model in training time. More detail reading:
 https://neptune.ai/blog/when-to-choose-catboost-over-xgboost-or-lightgbm 
+
+Mar22, 23
+List some of the different stages to build the hypotheses or model in machine learning 🥸 ?
+
+anirban chatterjee
+ — 
+Today at 1:47 PM
+Problem definition, data collection, exploratory data analysis, data preparation, feature selection, model building
+Hsin-Wen Chang
+ — 
+Today at 3:37 PM
+Good answer @anirban chatterjee 🥳 .  In machine learning, the three processes for constructing hypotheses are model building, model testing, and model application. Model construction involves learning from the training dataset and applying it to create a machine learning model. Model testing involves utilizing the test dataset to evaluate the learned model. Applying the model: Up until the learned model achieves the required accuracy, model development and testing are iterative. The finished model is then applied to the fresh data.
+anirban chatterjee
+ — 
+Today at 3:42 PM
+sorry i thought you asked steps upto making hypotheses, i got it wrong :/
+Hsin-Wen Chang
+ — 
+Today at 3:50 PM
+Don't be sorry your response is excellent and a necessary component of model construction. This type of query may not have a predetermined answer. 🌞 🌻
