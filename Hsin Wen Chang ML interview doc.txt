@@ -1203,3 +1203,14 @@ Hsin-Wen Chang
  — 
 Today at 3:50 PM
 Don't be sorry your response is excellent and a necessary component of model construction. This type of query may not have a predetermined answer. 🌞 🌻
+
+Mar23, 23
+please define sampling and list some of the sampling techniques 🥸 ?
+
+J. Ndambuki
+ — 
+Today at 1:51 PM
+Sampling means selecting a group from which you will collect data for your research.
+Sampling techniques include:-
+     1. Probability sampling ( e.g. Cluster, Simple random, stratified)
+    2. Non-probability sampling (e.g. Convience, voluntary, purposive)
