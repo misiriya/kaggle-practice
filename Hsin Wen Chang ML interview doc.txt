@@ -1214,3 +1214,21 @@ Sampling means selecting a group from which you will collect data for your resea
 Sampling techniques include:-
      1. Probability sampling ( e.g. Cluster, Simple random, stratified)
     2. Non-probability sampling (e.g. Convience, voluntary, purposive)
+
+Mar24, 23
+What is stratified sampling 🤔 ?
+
+Brindha Ganesan
+ — 
+Today at 12:42 PM
+A method of sampling… dividing the population into sub-groups…
+J. Ndambuki
+ — 
+Today at 1:00 PM
+It's a method of sampling in which a population is divided into smaller groups that don't overlap but represent the entire population.
+Hsin-Wen Chang
+ — 
+Today at 1:56 PM
+Good answer @J. Ndambuki @Brindha Ganesan 🥳 💪 ! With stratified sampling, a probability sample is selected proportionally from each stratum after the entire population has been divided into various subgroups, or strata. In a binary classification, for instance, if the ratio of the positive to the negative labeled data was 9:1, stratified sampling would include randomly choosing a subsample from each of the positive and negative labeled datasets to ensure that, after sampling, their ratio remained 9:1. Comparing stratified sampling to random sample, there are various benefits. By utilizing stratified sampling, for instance, it would be able to improve precision while using a smaller sample size or decrease the sample size needed to attain the same precision. 
+Detail reading:
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html
