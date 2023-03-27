@@ -1232,3 +1232,17 @@ Today at 1:56 PM
 Good answer @J. Ndambuki @Brindha Ganesan 🥳 💪 ! With stratified sampling, a probability sample is selected proportionally from each stratum after the entire population has been divided into various subgroups, or strata. In a binary classification, for instance, if the ratio of the positive to the negative labeled data was 9:1, stratified sampling would include randomly choosing a subsample from each of the positive and negative labeled datasets to ensure that, after sampling, their ratio remained 9:1. Comparing stratified sampling to random sample, there are various benefits. By utilizing stratified sampling, for instance, it would be able to improve precision while using a smaller sample size or decrease the sample size needed to attain the same precision. 
 Detail reading:
 https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html
+
+Mar27, 23
+What are the methods to extract features from audio ? 🤔 Please provide a brief explanation of those methods.
+
+Margaret Gathoni
+ — 
+Today at 12:17 PM
+For methods used to extract features from audio the aim is changing the speech waveform to a form of parametric representation at a relatively lesser data rate for subsequent processing and analysis. What I have used before was a package called PyAudioAnalysis which simplify the feature extraction and classification process by providing a number of helpful tools that can sift through the signal and create relevant features
+Hsin-Wen Chang
+ — 
+Today at 3:39 PM
+Awesome answer @Margaret Gathoni 💪 🥳 ! One of the approach to extracting features from an audio file is by using Mel Frequency Cepstral Coefficents (MFCCs). The MFCC divides the frequency band into sub-bands using the MEL scale before extracting the Cepstral Coefficents using the Discrete Cosine Transform (DCT). The MEL scale is particularly practical for processing sounds because it is based on how humans discern between frequencies. Detail readings:
+https://www.kaggle.com/c/birdsong-recognition/discussion/172573
+https://www.kaggle.com/code/ilyamich/mfcc-implementation-and-tutorial
