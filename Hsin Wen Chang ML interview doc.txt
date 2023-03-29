@@ -1246,3 +1246,37 @@ Today at 3:39 PM
 Awesome answer @Margaret Gathoni 💪 🥳 ! One of the approach to extracting features from an audio file is by using Mel Frequency Cepstral Coefficents (MFCCs). The MFCC divides the frequency band into sub-bands using the MEL scale before extracting the Cepstral Coefficents using the Discrete Cosine Transform (DCT). The MEL scale is particularly practical for processing sounds because it is based on how humans discern between frequencies. Detail readings:
 https://www.kaggle.com/c/birdsong-recognition/discussion/172573
 https://www.kaggle.com/code/ilyamich/mfcc-implementation-and-tutorial
+
+Mar28, 23
+When to choose Upsampling and when to choose Downsampling 🤔 ?
+
+Margaret Gathoni
+ — 
+Yesterday at 12:22 PM
+They are both example methods of handling class imbalance. Upsampling we are duplicating observation from the minority class while down sampling you removing observation from the majority class. The method used to solve the imbalance depends on the objective and what the data tells you
+Esha Mishra
+ — 
+Yesterday at 1:35 PM
+Upsampling should be used in most cases. If we have huge dataset and face memory scarcity, we should downsample.
+Hsin-Wen Chang
+ — 
+Yesterday at 3:44 PM
+Good answers @Margaret Gathoni @Esha Mishra 🥳 !
+Here is the detail recommend reading:
+https://towardsdatascience.com/5-techniques-to-work-with-imbalanced-data-in-machine-learning-80836d45d30c
+
+Mar29, 23
+Please explain Mixup and CutMix Augmentations 🤔 ?
+Margaret Gathoni
+ — 
+Today at 12:43 PM
+In CutMix, you cut out random portions of one image, and in MixUp, you interpolate pixel values between two images.
+Esha Mishra
+ — 
+Today at 1:32 PM
+1. In CutMix we replace image pixels with the pixels of another training image. The ground truth labels are also mixed in proportion to the area of patches in the images.
+
+2. In Mixup, two random images from training data are used to generate a weighted combination.
+
+Both prevent overfitting. They also overcome data loss that we face in Cutout augmentation. For object detection task CutMix seems to work better. 
+
