@@ -1267,6 +1267,7 @@ https://towardsdatascience.com/5-techniques-to-work-with-imbalanced-data-in-mach
 
 Mar29, 23
 Please explain Mixup and CutMix Augmentations 🤔 ?
+
 Margaret Gathoni
  — 
 Today at 12:43 PM
@@ -1279,4 +1280,11 @@ Today at 1:32 PM
 2. In Mixup, two random images from training data are used to generate a weighted combination.
 
 Both prevent overfitting. They also overcome data loss that we face in Cutout augmentation. For object detection task CutMix seems to work better. 
+Hsin-Wen Chang
+ — 
+Today at 3:44 PM
+Good answer @Margaret Gathoni @Esha Mishra 💪 🥳 ! MixUp interpolates the pixel values between two photos, while CutMix arbitrarily selects regions of one image to overlay on another. Both of these reduce the risk that the model would overfit the training distribution and increase the model's ability to generalize to out of distribution examples.
+Detail readings:
+https://www.kaggle.com/code/cdeotte/cutmix-and-mixup-on-gpu-tpu
+https://www.kaggle.com/code/saife245/cutmix-vs-mixup-vs-gridmask-vs-cutout
 
