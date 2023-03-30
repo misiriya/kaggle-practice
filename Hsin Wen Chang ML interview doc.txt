@@ -1288,3 +1288,17 @@ Detail readings:
 https://www.kaggle.com/code/cdeotte/cutmix-and-mixup-on-gpu-tpu
 https://www.kaggle.com/code/saife245/cutmix-vs-mixup-vs-gridmask-vs-cutout
 
+Mar30. 23
+May you list some types of Augmentations  for audio data 🤓 ?
+
+Margaret Gathoni
+ — 
+Today at 1:03 PM
+filtering, distortion, reverberation, volume scaling, Noise injection a few of what i can recall
+Hsin-Wen Chang
+ — 
+Today at 3:24 PM
+Good try @Margaret Gathoni 💪 ! We can apply the following types of Augmentations  for audio data:  AudioAug: Enhancements that will be made to audio data directly. Such as use CutMix, MixUp, Random CropPad, and Gaussian Noise. Data augmentations that will be made to spectrograms are designated as SpecAug. Sunch as TimeFreqMask.
+Detail reading:
+https://www.kaggle.com/code/awsaf49/birdclef23-pretraining-is-all-you-need-train#Data-Augmentation-%F0%9F%8C%88
+
