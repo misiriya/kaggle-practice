@@ -1,9 +1,44 @@
 Hsin-Wen Chang ML interview questions:
 
+Hsin-Wen Chang
+12/12/2022 17:45
+Hi everyone,
+I have a question does anyone know what is Graph ML and it's latest applications? I would love to learn more about its application and use cases. (edited)
+
+Mani Sarkar
+12/12/2022 18:30
+Great question I have some resources I have collected on my repo, see 
+https://github.com/neomatrix369/awesome-ai-ml-dl/blob/master/data/databases.md
+https://github.com/neomatrix369/awesome-ai-ml-dl/search?q=graph, https://www.kaggle.com/search?q=graph+ml (you have to pick and choose the topics here)
+
+Graph ML has many use-cases but also has its levels of difficulties and complexities.
+
+Hsin-Wen Chang
+12/12/2022 18:53
+
+https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications (edited)
+neptune.ai
+
+Nels
+13/12/2022 03:21
+Data availability strongly shapes ML predictions. My question:
+How acceptable is data synthesis for enhancing  data paucity.
+How open is data science communities towards new methods of enhancing data, i.e, are techniques like participatory simulations accepted in augmenting limited data?
+
+Hsin-Wen Chang
+13/12/2022 11:08
+
+If we only have limit amount of data, we will have trouble generalize the model to handle real world scenario so we apply data augmentation tequniches to increase the amount of data for our training process and know when you have collected enough data involves trying out ideas and testing them to see if they work. If the model is over or under-fitting, then try to figure out why and adjust accordingly. For example if model outputs a single continuous numeric value, one appropriate error metric would be mean squared error. If the mean squared error is high on both a training and validation set, the model is under fitting. If the mean squared error is low on a training set but high on a validation set, the model is overfitting. Collecting more data can help improve a model when the model is overfitting.  In the field of self-driving car, we perform data augmentation on the image dataset to help improve our model performance measure by evaluation metrics. Here is some cool example of perform data augmentation in image dataset: https://github.com/polarbeargo/CarND-Behavior-Cloning/blob/master/writeup_template.md
+A reference of discuss pros and cons of data augmentation in different field use cases https://www.analyticssteps.com/blogs/data-augmentation-techniques-benefits-and-applications
+
 Dec 13, 22
  What is the difference between Online and Offline (Batch) learning?
  
- https://www.kaggle.com/general/317514
+anirban chatterjee
+https://www.kaggle.com/general/317514
+ 
+Toba Adesugba
+Offline (batch) learning relates to when you train your models offline and in batches, you wait till you have accumulated your data before training and then deploying it into production. While online learning is when you train your model while it is currently in use on the server. You retrain the model every time it gets any little data. I think this method of learning will be great for recommendation systems
  
  Dec 14, 22
  What is the difference between Stochastic Gradient Descent (SGD) and standard Gradient Descent (GD) 🥸 ?
